@@ -17,6 +17,8 @@ import heropic15 from "../public/c2.png";
 import heropic16 from "../public/c3.png";
 import heropic17 from "../public/c4.png";
 import heropic18 from "../public/Footer.png";
+import Link from 'next/link';
+
 
 
 export default function Hero() {
@@ -35,7 +37,7 @@ export default function Hero() {
         alt="Profile"
         className=" w-[640px] h-[360px]"
       />
-</div>
+    </div>
      
     <div className="part2 flex justify-evenly items-center mt-10">
     <div className="images flex gap-8 justify-center items-center"></div>
@@ -61,11 +63,12 @@ export default function Hero() {
     
     <div className="part3 w-[1312px] h-6 mx-auto mt-10 flex justify-between text-gray-400" >
     <h1 className="w-[92px] h-24 ">Popular Car</h1>
-    <h2 className="w-[92px] h-24">View All</h2>
+    <Link href=".\viewall"><h2 className="w-[92px] h-24">View All</h2></Link>
     </div>
-     
-    <div className="mt-8 ml-12 flex justify-evenly items-center">
-    <Image
+    
+    
+<div className="mt-8 ml-12 flex justify-evenly items-center" >
+     <Image
        src={heropic6}
         alt="Profile"
          className=" w-[304px] h-[388px]"
@@ -81,15 +84,14 @@ export default function Hero() {
        src={heropic8}
         alt="Profile"
          className=" w-[304px] h-[388px]"
-       />
-
+       /> 
+       
 <Image
        src={heropic9}
         alt="Profile"
          className=" w-[304px] h-[388px]"
        />
-</div>
-
+</div> 
 <div className="part4 w-[1312px] h-6 mx-auto mt-10 flex  text-gray-400" >
 <h1 className="w-[156px] h-24 ">Recomendation Car</h1>
 </div>
@@ -159,7 +161,7 @@ export default function Hero() {
 </div>
 
 
-</div>
+// </div>
    
   )
 };
